@@ -1,4 +1,4 @@
 fluxco.de
 =========
 
-Bring the chaos back to choding
+Bringing the chaos back to coding.
