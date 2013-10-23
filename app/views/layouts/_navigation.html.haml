@@ -1,0 +1,14 @@
+= link_to "fluxco.de", root_path, :class => 'brand'
+  .nav
+    - if user_signed_in?
+      %li
+        = link_to 'logout', destroy_user_session_path, :method => 'delete'
+    - else
+      %li
+        = link_to 'login', new_user_session_path
+    - if user_signed_in?
+      %li
+        = link_to 'edit account', edit_user_registration_path
+    - else
+      %li
+        = link_to 'sign up', new_user_registration_path
