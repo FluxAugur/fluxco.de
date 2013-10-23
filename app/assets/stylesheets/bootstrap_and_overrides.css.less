@@ -1,7 +1,38 @@
-@import "twitter/bootstrap/bootstrap";
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  height: 100%;
+  display: table;
+  width: 100%;
+  padding: 0;
+}
+
+.row-fluid {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.centering {
+  float: none;
+  margin: 0 auto;
+}
 
 body {
  padding-top: @navbarHeight + 10px;
+ /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iNyUiIHN0b3AtY29sb3I9IiMxODE2MTQiIHN0b3Atb3BhY2l0eT0iMC42NyIvPgogICAgPHN0b3Agb2Zmc2V0PSIxNCUiIHN0b3AtY29sb3I9IiMxODE2MTQiIHN0b3Atb3BhY2l0eT0iMC43Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjY5JSIgc3RvcC1jb2xvcj0iIzFmMTgzMCIgc3RvcC1vcGFjaXR5PSIwLjkzIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg2JSIgc3RvcC1jb2xvcj0iIzFmMTgzMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-radial-gradient(center, ellipse cover,  rgba(24,22,20,0.67) 7%, rgba(24,22,20,0.7) 14%, rgba(31,24,48,0.93) 69%, rgba(31,24,48,1) 86%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(7%,rgba(24,22,20,0.67)), color-stop(14%,rgba(24,22,20,0.7)), color-stop(69%,rgba(31,24,48,0.93)), color-stop(86%,rgba(31,24,48,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(24,22,20,0.67) 7%,rgba(24,22,20,0.7) 14%,rgba(31,24,48,0.93) 69%,rgba(31,24,48,1) 86%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(24,22,20,0.67) 7%,rgba(24,22,20,0.7) 14%,rgba(31,24,48,0.93) 69%,rgba(31,24,48,1) 86%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(24,22,20,0.67) 7%,rgba(24,22,20,0.7) 14%,rgba(31,24,48,0.93) 69%,rgba(31,24,48,1) 86%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(24,22,20,0.67) 7%,rgba(24,22,20,0.7) 14%,rgba(31,24,48,0.93) 69%,rgba(31,24,48,1) 86%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab181614', endColorstr='#1f1830',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 }
 
 @import "twitter/bootstrap/responsive";
@@ -24,3 +55,4 @@ body {
 //@import "twitter/bootstrap/sprites.less";
 
 // Override the default bootstrap variables in stubs/variables_overrides.css.less
+

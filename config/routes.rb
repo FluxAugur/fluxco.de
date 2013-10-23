@@ -1,4 +1,4 @@
-Starterapp::Application.routes.draw do
+FluxcoDe::Application.routes.draw do
 
   root 'pages#home'
 

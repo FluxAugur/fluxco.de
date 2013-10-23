@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Starterapp::Application.load_tasks
+FluxcoDe::Application.load_tasks

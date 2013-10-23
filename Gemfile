@@ -18,17 +18,28 @@ gem 'pg'
 
 # Performance and Exception management
 # gem 'airbrake'
-# gem 'newrelic_rpm'
+gem 'newrelic_rpm'
 
 # Security
 # gem 'secure_headers'
 
 # Miscellanea
-# gem 'google-analytics-rails'
+gem 'google-analytics-rails'
 gem 'haml'
 # gem 'http_accept_language'
 gem 'jquery-rails'
 # gem 'resque', require: 'resque/server' # Resque web interface
+
+# Authentication & Authorization
+gem 'devise'
+gem 'cancan'
+gem 'rolify'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+
+# Configuration
+gem 'figaro'
 
 # Assets
 gem 'coffee-rails', '~> 4.0.0'
@@ -42,6 +53,7 @@ gem 'therubyracer'
 gem 'turbolinks'
 gem 'twitter-bootstrap-rails', github: 'diowa/twitter-bootstrap-rails', branch: 'fontawesome-3.2.1'
 gem 'uglifier', '>= 1.3.0'
+gem 'simple_form'
 
 group :development, :test do
   gem 'debugger'
