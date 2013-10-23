@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: <%= ENV['FLUXCO_DE_DEV_DB_DATABASE'] || 'starterapp_development' %>
+  database: <%= ENV['FLUXCO_DE_DEV_DB_DATABASE'] || 'fluxco_de_development' %>
   pool: 5
   username: <%= ENV['FLUXCO_DE_DEV_DB_USER'] || 'postgres' %>
   password: <%= ENV['FLUXCO_DE_DEV_DB_PASSWORD'] %>
@@ -43,10 +43,10 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
+test: &test
   adapter: postgresql
   encoding: unicode
-  database: <%= ENV['FLUXCO_DE_TEST_DB_DATABASE'] || 'starterapp_test' %>
+  database: <%= ENV['FLUXCO_DE_TEST_DB_DATABASE'] || 'fluxco_de_test' %>
   pool: 5
   username: <%= ENV['FLUXCO_DE_TEST_DB_USER'] || 'postgres' %>
   password: <%= ENV['FLUXCO_DE_TEST_DB_PASSWORD'] %>
@@ -56,7 +56,10 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: starterapp_production
+  database: fluxco_de_production
   pool: 5
   username: postgres
   password:
+
+cucumber:
+  <<: *test
