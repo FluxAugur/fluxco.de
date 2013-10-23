@@ -11,10 +11,10 @@ MANDRILL_USERNAME: nathanial-mcconnell@fluxco.de
 MANDRILL_API_KEY: bd8meDZzpNAoD2K5s0w1EA
 MAILCHIMP_API_KEY: 51bbb048d3914f2b6367ec07059aedc8-us7
 MAILCHIMP_LIST_ID: b826f8dfc6
-ADMIN_EMAIL: instructor@fluxco.de
+ADMIN_EMAIL: augur-praetor@fluxco.de
 ADMIN_FIRST_NAME: Augur
 ADMIN_LAST_NAME: Praetor
-ADMIN_PASSWORD: !yzzorderrex76?
+ADMIN_PASSWORD: stratego76
 ROLES: [admin, instructor, user]
 EMAIL_ADDRESS: hall-monitor@fluxco.de
 DOMAIN: fluxco.de
