@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-FluxcoDe::Application.config.secret_key_base = '3f1afc86622ac2ad0b6807f8c39f54eac579b9c430adae6f49ed02bb68d9b2615a082bf0037397f9342f995b71b73ba9167476697e0e5ec0d40173969b5fecfc'
+FluxcoDe::Application.config.secret_key_base = 'e93c76b045f2ebd3e1053935b081bb37642261c617184c680449cfddbb293eaa58a1a6cd1662429ccb450b54b9efc0748d8674a1ae8401def80696010740af2c'
